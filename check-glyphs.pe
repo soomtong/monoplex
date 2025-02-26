@@ -1,0 +1,53 @@
+# Open the font file
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Regular.ttf")
+# Open("MonoplexKRNerd-Regular.ttf")
+
+# List of specific glyphs to check
+# "You’re unable to view this"
+# glyphs_to_check = ["’", "Right Single Quotation Mark", "C", "uniAC00", "uniAC01"]  # Modify with your glyph names
+glyphs_to_check = ["U+00B0", "U+2019", "U+AC00", "uniAC01"]  # Modify with your glyph names
+i = 0
+
+# Loop through and check if glyph exists
+Print("Checking for specific glyphs: PlemolJP35ConsoleNF")
+while (i < SizeOf(glyphs_to_check))
+    glyph = glyphs_to_check[i]
+
+    Select(glyph)   # Select the glyph
+    if (WorthOutputting())  # Check if glyph exists
+        Print(glyph, " exists in the font.")
+    else
+        Print(glyph, " is missing.")
+    endif
+
+    i = i + 1
+endloop
+
+Close()
+
+# Open the font file
+Open("build/MonoplexKRWide/MonoplexKRWide-Regular.ttf")
+
+# List of specific glyphs to check
+# "You’re unable to view this"
+# glyphs_to_check = ["’", "Right Single Quotation Mark", "C", "uniAC00", "uniAC01"]  # Modify with your glyph names
+glyphs_to_check = ["U+00B0", "U+2019", "U+AC00", "uniAC01"]  # Modify with your glyph names
+i = 0
+
+# Loop through and check if glyph exists
+Print("Checking for specific glyphs: MonoplexKRWide")
+while (i < SizeOf(glyphs_to_check))
+    glyph = glyphs_to_check[i]
+
+    Select(glyph)   # Select the glyph
+    if (WorthOutputting())  # Check if glyph exists
+        Print(glyph, " exists in the font.")
+    else
+        Print(glyph, " is missing.")
+    endif
+
+    i = i + 1
+endloop
+
+# Quit FontForge
+Quit()

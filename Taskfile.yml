@@ -1,0 +1,32 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World! It provided by 'brew info go-task'
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - task --list-all
+    silent: true
+  build-kr:
+    cmds:
+      - sh ./monoplex_kr_generator.sh
+      - sh ./os2_patch.sh
+      - mkdir -p ./build/MonoplexKR
+      - mkdir -p ./build/MonoplexKRWide
+      - mv -f ./MonoplexKRWide*.ttf ./build/MonoplexKRWide/
+      - mv -f ./MonoplexKR*.ttf ./build/MonoplexKR/
+    silent: true
+  merge-kr:
+    cmds:
+      - fontforge --script ./check-glyphs.pe
+      - fontforge --script ./merge-kr-on-jp.py
+      - ls -lt build
+    silent: true
+  clean:
+    cmds:
+      - rm -rf ./build
+    silent: true

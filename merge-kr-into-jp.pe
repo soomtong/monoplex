@@ -1,0 +1,692 @@
+family_name = "Monoplex Nerd"
+wide_family_name = "Monoplex Wide Nerd"
+
+safe_family_name = "MonoplexNerd"
+safe_wide_family_name = "MonoplexWideNerd"
+
+#
+# 넓은폭
+#
+style = "Bold"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "SemiBold"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Medium"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Text"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Regular"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Light"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ExtraLight"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Thin"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+#
+# 넓은폭 기울임
+#
+style = "BoldItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "SemiBoldItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "MediumItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "TextItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Italic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "LightItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ExtraLightItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ThinItalic"
+Print("Merge " + wide_family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJP35Console_NF/PlemolJP35ConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKRWide/MonoplexKRWide-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+#
+# 좁은폭
+#
+style = "Bold"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "SemiBold"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Medium"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Text"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Regular"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Light"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ExtraLight"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Thin"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+#
+# 좁은폭 기울임
+#
+style = "BoldItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "SemiBoldItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "MediumItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "TextItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "Italic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "LightItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ExtraLightItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+style = "ThinItalic"
+Print("Merge " + family_name + " " + style + "...")
+# Open the base font (first font)
+Open("build/PlemolJPConsole_NF/PlemolJPConsoleNF-" + style + ".ttf")
+Print("Before changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Merge the second font
+MergeFonts("build/MonoplexKR/MonoplexKR-" + style + ".ttf")
+# Change the font family name
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Print("After changes:")
+Print(" - Font name: " + $fontname)
+Print(" - Family name: " + $familyname)
+Print(" - Full name: " + $fullname)
+# Save the merged font
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+# Quit FontForge
+Quit()
