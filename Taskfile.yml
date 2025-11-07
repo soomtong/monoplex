@@ -26,6 +26,11 @@ tasks:
       - fontforge --script ./merge-kr-on-jp.py
       - ls -lt build
     silent: true
+  rename-monoplex:
+    cmds:
+      - fontforge --script ./rename-kr-font.pe
+      - ls -lt build
+    silent: true
   clean:
     cmds:
       - rm -rf ./build

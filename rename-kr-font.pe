@@ -1,0 +1,276 @@
+family_name = "Monoplex Nerd"
+wide_family_name = "Monoplex Wide Nerd"
+
+safe_family_name = "MonoplexNerd"
+safe_wide_family_name = "MonoplexWideNerd"
+
+#
+# 넓은폭
+#
+style = "Bold"
+Print("Rename " + wide_family_name + " " + style + "...")
+Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+# style = "SemiBold"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Medium"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Text"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+style = "Regular"
+Print("Rename " + wide_family_name + " " + style + "...")
+Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+SetTTFName(0x409, 16, wide_family_name)
+Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+Close()
+
+# style = "Light"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ExtraLight"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Thin"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+#
+# 넓은폭 기울임
+#
+# style = "BoldItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "SemiBoldItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "MediumItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "TextItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Italic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "LightItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ExtraLightItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ThinItalic"
+# Print("Rename " + wide_family_name + " " + style + "...")
+# Open("build/PlemolKR35ConsoleNF/PlemolKR35ConsoleNF-" + style + ".ttf")
+# SetFontNames(safe_wide_family_name + "-" + style, wide_family_name, "Monoplex Wide Nerd Font " + style)
+# SetTTFName(0x409, 16, wide_family_name)
+# Generate("build/" + safe_wide_family_name + "-" + style + ".ttf")
+# Close()
+
+#
+# 좁은폭
+#
+style = "Bold"
+Print("Rename " + family_name + " " + style + "...")
+Open("build/PlemolKRConsoleNF/PlemolKRConsoleNF-" + style + ".ttf")
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+# style = "SemiBold"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Medium"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Text"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+style = "Regular"
+Print("Rename " + family_name + " " + style + "...")
+Open("build/PlemolKRConsoleNF/PlemolKRConsoleNF-" + style + ".ttf")
+SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+SetTTFName(0x409, 16, family_name)
+Generate("build/" + safe_family_name + "-" + style + ".ttf")
+Close()
+
+# style = "Light"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ExtraLight"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Thin"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+#
+# 좁은폭 기울임
+#
+# style = "BoldItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "SemiBoldItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "MediumItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "TextItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "Italic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "LightItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ExtraLightItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# style = "ThinItalic"
+# Print("Rename " + family_name + " " + style + "...")
+# Open("build/PlemolKRConsole/PlemolKRConsole-" + style + ".ttf")
+# SetFontNames(safe_family_name + "-" + style, family_name, "Monoplex Nerd Font " + style)
+# SetTTFName(0x409, 16, family_name)
+# Generate("build/" + safe_family_name + "-" + style + ".ttf")
+# Close()
+
+# Quit FontForge
+Quit()

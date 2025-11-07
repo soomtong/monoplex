@@ -374,145 +374,6 @@ set_half_to_full_right_fewer="
   SelectFewer(8220) # “ (Left Double Quotation Mark)
 "
 
-########################################
-# Generate script for Nerd Fonts Symbols
-########################################
-
-nerdfonts_src="Blex Mono Nerd Font Complete.ttf"
-modified_nerdfonts_generator="modified_nerdfonts_generator.pe"
-input_nerdfonts=`find $fonts_directories -follow -iname "$nerdfonts_src" | head -n 1`
-modified_nerdfonts='modified-nerdfonts.ttf'
-modified_nerdfonts35='modified-nerdfonts35.ttf'
-
-# Nerd Fonts から適用するグリフ
-select_nerd_symbols="
-  # Powerline
-  SelectMore(0ue0a0, 0ue0a2)
-  SelectMore(0ue0b0, 0ue0b3)
-
-  # Powerline Extra
-  SelectMore(0ue0a3)
-  SelectMore(0ue0b4, 0ue0c8)
-  SelectMore(0ue0ca)
-  SelectMore(0ue0cc, 0ue0d2)
-  SelectMore(0ue0d4)
-
-  # IEC Power Symbols
-  SelectMore(0u23fb, 0u23fe)
-  SelectMore(0u2b58)
-
-  # Octicons
-  SelectMore(0u2665)
-  SelectMore(0u26A1)
-  SelectMore(0uf27c)
-  SelectMore(0uf400, 0uf4a8)
-
-  # Font Awesome Extension
-  SelectMore(0ue200, 0ue2a9)
-
-  # Weather
-  SelectMore(0ue300, 0ue3e3)
-
-  # Seti-UI + Custom
-  SelectMore(0ue5fa, 0ue62e)
-
-  # Devicons
-  SelectMore(0ue700, 0ue7c5)
-
-  # Font Awesome
-  SelectMore(0uf000, 0uf2e0)
-
-  # Font Logos (Formerly Font Linux)
-  SelectMore(0uf300, 0uf31c)
-
-  # Material Design Icons
-  SelectMore(0uf500, 0ufd46)
-
-  # オリジナル Hack の未使用領域を一括選択 (拾い漏れ防止)
-  SelectMore(0ue0d5, 0ufefd)
-
-  # Pomicons -> 商用不可のため除外
-  SelectFewer(0ue000, 0ue00d)
-"
-
-cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
-#!$fontforge_command -script
-
-Print("Generate Nerd Fonts parts")
-
-# Set parameters
-input_nerdfonts  = "$input_nerdfonts"
-output_nerdfonts = "$modified_nerdfonts"
-output_nerdfonts35 = "$modified_nerdfonts35"
-
-# Begin loop of regular and bold
-# Open IBMPlexMono
-Print("Open " + input_nerdfonts)
-Open(input_nerdfonts)
-
-SelectWorthOutputting()
-UnlinkReference()
-ScaleToEm(${em_ascent}, ${em_descent})
-
-# NerdFonts 以外のグリフを削除
-SelectNone()
-$select_nerd_symbols
-SelectInvert()
-Clear()
-
-# Powerline 記号の位置調整
-Select(0ue0b0); SelectMore(0ue0b4); SelectMore(0ue0b8); SelectMore(0ue0bc)
-Move(-20, 0)
-
-# Save modified NerdFonts35
-Print("Save " + output_nerdfonts35)
-SetOS2Value("WinAscentIsOffset",       0)
-SetOS2Value("WinDescentIsOffset",      0)
-SetOS2Value("TypoAscentIsOffset",      0)
-SetOS2Value("TypoDescentIsOffset",     0)
-SetOS2Value("HHeadAscentIsOffset",     0)
-SetOS2Value("HHeadDescentIsOffset",    0)
-SetOS2Value("WinAscent",             ${monoplex_kr_wide_ascent})
-SetOS2Value("WinDescent",            ${monoplex_kr_wide_descent})
-SetOS2Value("TypoAscent",            ${em_ascent})
-SetOS2Value("TypoDescent",          -${em_descent})
-SetOS2Value("TypoLineGap",           ${typo_line_gap})
-SetOS2Value("HHeadAscent",           ${monoplex_kr_wide_ascent})
-SetOS2Value("HHeadDescent",         -${monoplex_kr_wide_descent})
-SetOS2Value("HHeadLineGap",            0)
-SetPanose([2, 11, 5, 3, 2, 2, 3, 2, 2, 7])
-Generate("${tmpdir}/" + output_nerdfonts35, '')
-
-# Powerline 記号の位置調整
-Select(0ue0b0); SelectMore(0ue0b4); SelectMore(0ue0b8); SelectMore(0ue0bc)
-Move(-3, 0)
-
-SelectWorthOutputting()
-Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
-SetWidth(${monoplex_kr_half_width}, 0)
-
-# Save modified NerdFonts
-Print("Save " + output_nerdfonts)
-SetOS2Value("WinAscentIsOffset",       0)
-SetOS2Value("WinDescentIsOffset",      0)
-SetOS2Value("TypoAscentIsOffset",      0)
-SetOS2Value("TypoDescentIsOffset",     0)
-SetOS2Value("HHeadAscentIsOffset",     0)
-SetOS2Value("HHeadDescentIsOffset",    0)
-SetOS2Value("WinAscent",             ${monoplex_kr_ascent})
-SetOS2Value("WinDescent",            ${monoplex_kr_descent})
-SetOS2Value("TypoAscent",            ${em_ascent})
-SetOS2Value("TypoDescent",          -${em_descent})
-SetOS2Value("TypoLineGap",           ${typo_line_gap})
-SetOS2Value("HHeadAscent",           ${monoplex_kr_ascent})
-SetOS2Value("HHeadDescent",         -${monoplex_kr_descent})
-SetOS2Value("HHeadLineGap",            0)
-SetPanose([2, 11, 5, 9, 2, 2, 3, 2, 2, 7])
-Generate("${tmpdir}/" + output_nerdfonts, '')
-
-Quit()
-_EOT_
-
 
 ########################################
 # Generate script for modified IBMPlexMono Material
@@ -2265,11 +2126,6 @@ _EOT_
 # Generate Monoplex KR
 ########################################
 
-# Generate Nerd Fonts Symbols
-if [ "$NERDFONTS_FLG" = 'true' ]; then
-  $fontforge_command -script ${tmpdir}/${modified_nerdfonts_generator} 2> $redirection_stderr || exit 4
-fi
-
 # Generate Material
 $fontforge_command -script ${tmpdir}/${modified_plexmono_material_generator} 2> $redirection_stderr || exit 4
 
@@ -2307,8 +2163,6 @@ for style in $style_list
 do
   monoplex_kr_filename="$(echo "${monoplex_kr_familyname}${monoplex_kr_familyname_suffix}-${style}.ttf" | tr -d '[:space:]')"
   monoplex_kr_wide_filename="$(echo "${monoplex_kr_wide_familyname}${monoplex_kr_familyname_suffix}-${style}.ttf" | tr -d '[:space:]')"
-  nerdfonts="${tmpdir}/${modified_nerdfonts}"
-  nerdfonts35="${tmpdir}/${modified_nerdfonts35}"
 
   # Add hinting
   # Monoplex KR
@@ -2390,23 +2244,6 @@ do
   if [ "${style}" = 'BoldItalic' ]; then
     marge_plexkr_regular="${tmpdir}/${modified_plexkr_bold_italic}.ttf"
     marge_plexkr_wide_regular="${tmpdir}/${modified_plexkr_wide_bold_italic}.ttf"
-  fi
-
-  # Generate Nerd Fonts version
-  if [ "$NERDFONTS_FLG" = 'true' ]; then
-    # Monoplex KR Nerd
-    echo "pyftmerge: ${monoplex_kr_filename}"
-    pyftmerge "hinted_${monoplex_kr_filename}" "$nerdfonts"
-    pyftmerge merged.ttf "$marge_plexkr_regular"
-    mv merged.ttf "${monoplex_kr_filename}"
-
-    # Monoplex KR Wide Nerd
-    echo "pyftmerge: ${monoplex_kr_wide_filename}"
-    pyftmerge "hinted_${monoplex_kr_wide_filename}" "$nerdfonts35"
-    pyftmerge merged.ttf "$marge_plexkr_wide_regular"
-    mv merged.ttf "${monoplex_kr_wide_filename}"
-
-    continue
   fi
 
   # Monoplex KR
